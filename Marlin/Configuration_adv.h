@@ -814,6 +814,7 @@
   #endif
 #endif
 
+//TODO: Molestar con esta parte de codigo si el segundo eje y tiene dos endstops o si sus salidas tienen que ser inversas para funcionar.
 #if HAS_DUAL_Y_STEPPERS
   //#define INVERT_Y2_VS_Y_DIR        // Y2 direction signal is the opposite of Y
   //#define Y_DUAL_ENDSTOPS           // Y2 has its own endstop

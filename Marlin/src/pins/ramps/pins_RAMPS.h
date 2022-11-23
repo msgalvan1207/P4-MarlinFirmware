@@ -181,6 +181,7 @@
   #define E0_CS_PIN                           42
 #endif
 
+//TODO: Cambiar instancias de E1 a Y2 para que salida de E1 sea Y2.
 #ifndef E1_STEP_PIN
   #define E1_STEP_PIN                         36
 #endif
