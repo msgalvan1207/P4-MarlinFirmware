@@ -164,7 +164,7 @@
 //TODO: Tambien se debe de habilitar dualMotor en Configuration_adv.h
 #define X_DRIVER_TYPE  DRV8825
 #define Y_DRIVER_TYPE  DRV8825
-//#define Z_DRIVER_TYPE  DRV8825
+#define Z_DRIVER_TYPE  DRV8825
 //#define X2_DRIVER_TYPE A4988
 #define Y2_DRIVER_TYPE DRV8825
 //#define Z2_DRIVER_TYPE A4988
@@ -176,7 +176,7 @@
 //#define U_DRIVER_TYPE  A4988
 //#define V_DRIVER_TYPE  A4988
 //#define W_DRIVER_TYPE  A4988
-#define E0_DRIVER_TYPE A4988   //Creo que esta linea de codigo se puede comentar.
+#define E0_DRIVER_TYPE DRV8825   //Creo que esta linea de codigo se puede comentar.
 //#define E1_DRIVER_TYPE A4988
 //#define E2_DRIVER_TYPE A4988
 //#define E3_DRIVER_TYPE A4988
@@ -1172,7 +1172,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 //TODO: Esto siguiendo la información de configuring marlin. Esto se refiere a cuantos steps por milimetro se hacen.
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 500 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1180,7 +1180,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 //TODO: Velocidades maximas en mm/s. Los importantes a cambiar son los primeros 2 parametros del arreglo
-#define DEFAULT_MAX_FEEDRATE          { 300, 300, 5, 25 }
+#define DEFAULT_MAX_FEEDRATE          { 13, 13, 5, 25}
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
