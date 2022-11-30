@@ -113,7 +113,7 @@
  * :[2400, 9600, 19200, 38400, 57600, 115200, 250000, 500000, 1000000]
  */
 //TODO: Probar distintas configuraciones de baudrate
-#define BAUDRATE 250000
+#define BAUDRATE 115200
 
 //#define BAUD_RATE_GCODE     // Enable G-code M575 to set the baud rate
 
@@ -1172,7 +1172,7 @@
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
 //TODO: Esto siguiendo la información de configuring marlin. Esto se refiere a cuantos steps por milimetro se hacen.
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 100, 100, 400, 500 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 25, 25, 400, 500 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
